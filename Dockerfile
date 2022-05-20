@@ -1,4 +1,4 @@
-FROM node:16.14.0
+FROM node:16
 
 LABEL author="Thomas Fournier" maintainer="thomas@artivain.com"
 
