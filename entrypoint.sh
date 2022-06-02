@@ -7,8 +7,6 @@ export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
 # Print Node.js Version
 node -v
 
-npm i -g npm@latest
-
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo -e ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
 echo ":/home/container$ ${MODIFIED_STARTUP}"
